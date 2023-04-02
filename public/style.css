@@ -1,0 +1,197 @@
+*{
+    margin: 0px;
+    padding: 0px;
+  
+   
+
+}
+body{
+    background-image:url(https://vspicer.com/wp-content/uploads/2017/06/victoria-spicer-1.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    max-width: 1000px;
+    width: 100%;
+    height: 656px;
+    background-size: 110% 656px;
+}
+ul {
+    display: flex;
+    justify-content: center;
+}
+li{
+    list-style: none;
+   
+}
+a{
+color: black;
+padding: 24px;
+text-decoration: none;
+
+}
+
+header{
+    z-index: 2000;
+    width: 100%;
+    position: fixed;
+    top: 0%;
+    bottom: 0%;
+}
+nav {
+    padding-top: 42px;
+    padding-bottom: 42px;
+    margin: 0 92px;
+    animation: fadeIn;
+    animation-duration: 2s;
+}
+h1{
+    z-index: 1500;
+    display: flex;
+    margin-left: 7.5rem;
+    animation: fadeInDown;
+    animation-duration: 2s;
+  
+}
+.name{
+    margin-top: 9.5rem;
+  
+    font-size: 25px;
+    font-family: 'Rubik Moonrocks', cursive; 
+}
+.surename{
+    font-size: 23px;
+font-weight: 100;
+font-family: 'Lato', sans-serif;
+
+}
+h3{
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 35px;
+    animation: fadeInUp;
+    animation-duration: 2s;
+    
+  
+}
+.profession{
+    margin-left: 46rem;
+    margin-top: 9rem;
+}
+.set{
+    margin-left: 4rem;
+}
+
+
+ul a:hover {
+text-decoration: dashed;
+cursor: pointer;
+display: inline-block;
+position: relative;
+color: 
+#0c0c0c;
+}
+
+  
+ul a:hover:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: 
+  #0f0f0f;
+    transform-origin: bottom right;
+    transition: transform 5.55s ease;
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
+  ul a:hover:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
+  /* Hero end */
+
+  .setimg{
+    margin-top: 30%;
+  }
+
+  .img2{
+    height: 326.8px;
+    width: 486px;
+    left: 100px;
+
+    padding-left: 400px;
+    padding-top: 300px;
+
+  }
+  .img1{
+    width: 430px;
+    height: 486px;
+    padding-left: 40px;
+    position: absolute;
+    z-index: -1;
+    filter: grayscale(100%);
+  }
+  
+
+.setimg .img1::after:hover{
+    filter: grayscale(10%);
+    z-index: 3;
+}
+.endtxt{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+p{
+    border: 1px;
+    min-height: 120px;
+    max-width: 40%;
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 10px;
+    margin-left: 10%;
+    font-family: 'Shadows Into Light', cursive;
+   font-size: 18px;
+    
+}
+.txt2{
+    margin-right: 10%;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+   padding: 40px;
+
+    font-family:  'Oxygen';
+   
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+@media screen and (max-width: 786px){
+    nav ul{
+        display: none;
+    }
+    body{
+        background-image:url(https://vspicer.com/wp-content/uploads/2017/06/kure-bazar.jpg)
+    }
+.img1{
+    display: none;
+}
+.img2{
+    display: none;
+    
+}
+p{
+    display: block;
+    padding: 20px;
+ 
+}
+.endtxt{
+    margin-bottom: 40px;
+}
+
+}
